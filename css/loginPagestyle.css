@@ -1,0 +1,33 @@
+    
+Body{
+    background-color:white;
+    background-image:url(../images/univ-cover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);   
+}
+form{ 
+    margin:auto;
+    text-align: center;
+    width:360px;
+    height:360px;
+    border-radius: 50%;
+        
+} 
+input[type=text], input[type=password] { 
+    width: 100%; 
+    margin: 8px 0;
+    padding: 12px 20px;
+    border: 2px solid rgb(15, 15, 19); 
+    box-sizing: border-box;    
+}
+.container {               
+    margin-top: 15%;  
+        width: 250px;
+        height: 350px;
+        padding: 25px;
+    background: rgb(156, 186, 241, 0.4);
+    border-radius: 15px;
+} 
+#link
+{color:black;}
