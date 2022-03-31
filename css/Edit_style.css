@@ -1,10 +1,15 @@
 img{
     border-radius: 50%;
-    width: 15%;
+    width: 70px;
+    height: 70px;
+    margin-left: 20%;
 }
 #student-changes{
     padding-top: 15%;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     left: 0;
     width: 60%;
     height: 100%;
@@ -38,7 +43,8 @@ label{
     border-radius: 20px;
     font-size: 18px;
     vertical-align: middle;
-    padding: 6px 18px
+    padding: 6px 18px;
+    margin-left: 25%;
 }
 
 
@@ -54,11 +60,14 @@ label{
     height: 50%;
     padding-top: 30%;
     padding-bottom: 30%;
+    padding-right: 3%;
     
 }
 #info-con{
     background-color: rgb(105,142,162,0.1);
     border-radius: 15px;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 li{
     list-style: none;
@@ -78,11 +87,25 @@ i{
     color: white;
     border-radius: 20px;
     font-size: 18px;
-    padding: 6px 18px
+    padding: 6px 18px;
+    margin-left: 40%;
 }
 h2{
     text-align: center;
 }
-
-
+.switch{
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 40px;
+    height: 22px;
+}
+.slider:before {
+    height: 14px;
+    width: 14px;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
 
