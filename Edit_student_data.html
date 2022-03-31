@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html>
     <header>
+        <title>Edit student data</title>
+        <link rel="stylesheet" href="css/Edit_style.css">
+        <link rel="stylesheet" href="css/style.css">
     </header>
     <body>
         <div id="student-changes">
             <img src="./images/female_user.png" alt="Student picture ">
-            <!--use label to when a user clicks the text within the <label> element, it toggles the input (this increases the hit area)-->
-            <div class="part">
-                <label class="changes-title">Student Name</label>
-                <input  class="text-input" type="text" value="Sara Mohamed">
+            <div id="center">
+                <!--use label to when a user clicks the text within the <label> element, it toggles the input (this increases the hit area)-->
+                <div class="part">
+                    <label class="changes-title">Student Name</label>
+                    <input class="text-input" type="text" value="Sara Mohamed">
+                </div>
+                <div class="part">
+                        <label class="changes-title">Student ID</label>
+                        <input  class="text-input" type="text" value="2020222">
+                </div>
+                <div class="part">
+                    <label class="changes-title">GPA</label>
+                    <input  class="text-input" type="text" value="3.33">
+                </div>
+                <div class="part">
+                    <label class="changes-title">Email Address</label>
+                    <input  class="text-input" type="text" value="Sara@gmail.com">
+                </div>
+                <div class="part">
+                    <label class="changes-title">Student Level</label>
+                    <select class="select-button">
+                        <option value="0">2</option> <!--option 0 is 2 to show Sara's level-->
+                        <option value="1">1</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                    </select>
+                </div>
+                <div class="part">
+                    <label class="changes-title">Department</label>
+                    <i>General</i> <!--use i element because not allowed to edit-->
+                </div>
+                <div class="part">
+                    <label class="changes-title">Date of birth</label>
+                    <input id="date-button" type="date" value="2002-07-16"> <!--value  is 2002-07-16 to show Sara's birthday-->
+                </div>
+                <div class="part">
+                    <label class="changes-title">Gender</label>
+                    <select class="select-button">
+                        <option value="0">Female</option> <!--option 0 is female to show Sara's gender-->
+                        <option value="1">Male</option>
+                    </select>
+                </div>
+                <div class="part">
+                    <label class="changes-title">Mobile Number</label>
+                    <input  class="text-input" type="text" value="01111112">
+                </div>
+                <div class="part">
+                    <label class="changes-title">Status</label>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
             </div>
-            <div class="part">
-                    <label class="changes-title">Student ID</label>
-                    <input  class="text-input" type="text" value="2020222">
             </div>
-            <div class="part">
-                <label class="changes-title">GPA</label>
-                <input  class="text-input" type="text" value="3.33">
-            </div>
-            <div class="part">
-                <label class="changes-title">Email Address</label>
-                <input  class="text-input" type="text" value="Sara@gmail.com">
-            </div>
-            <div class="part">
-                <label class="changes-title">Student Level</label>
-                <select class="select-button">
-                    <option value="0">2</option> <!--option 0 is 2 to show Sara's level-->
-                    <option value="1">1</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                </select>
-            </div>
-            <div class="part">
-                <label class="changes-title">Department</label>
-                <i>General</i> <!--use i element because not allowed to edit-->
-            </div>
-            <div class="part">
-                <label class="changes-title">Date of birthday</label>
-                <input id="date-button" type="date" value="2002-07-16"> <!--value  is 2002-07-16 to show Sara's birthday-->
-            </div>
-            <div class="part">
-                <label class="changes-title">Gender</label>
-                <select class="select-button">
-                    <option value="0">Female</option> <!--option 0 is female to show Sara's gender-->
-                    <option value="1">Male</option>
-                </select>
-            </div>
-            <div class="part">
-                <label class="changes-title">Mobile Number</label>
-                <input  class="text-input" type="text" value="01111112">
-            </div>
-            <div class="part">
-                <label class="changes-title">Status</label>
-                <input id="toggel-button" type="checkbox" value="true">
-            </div>
+            
             <form>
-                <input type="submit" value="Save" class="changes">
+                <button type="submit" id="save">Save</button>
             </form>
 
         </div>
+
+
+
+
+
         <div id="student-info">
-            <h2>Student Information</h2>
+            <h3>Student Information</h3>
             <ul>
-                <!-- p is the block-level element in HTML for this we use the span element -->
+                <!-- span is the block-level elements in HTML -->
                 <li>
                     <span class="data-title">Student Name: </span>
                     <i>Sara Mohamed</i>
@@ -88,7 +102,7 @@
                     <i>General</i>
                 </li>
                 <li>
-                    <span class="data-title">Date of birthday: </span>
+                    <span class="data-title">Date of birth: </span>
                     <i>16/7/2002</i>
                 </li>
                 <li>
@@ -105,7 +119,7 @@
                 </li>
             </ul>
             <form>
-                <input type="button" value="Delete" class="changes">
+                <button type="button" id="delete">Delete</button>
             </form>
         </div>
     </body>
