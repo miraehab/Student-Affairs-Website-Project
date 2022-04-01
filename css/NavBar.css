@@ -9,7 +9,7 @@ a{
 .nav-right{
     margin-top: -4%;
     float:right;
-    width: 31%;
+    width: 32%;
     padding: 1%;
 }
 
@@ -23,7 +23,14 @@ a{
     color: white;
 }
 
-.active-menu{
+.active-menu-right{
+    padding: 4%;
+    background-color: white;
+    color:black;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.active-menu-left{
     padding: 3%;
     background-color: white;
     color:black;
@@ -53,7 +60,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 32%;
+        width: 33%;
         padding: 1%;
     }
 }
@@ -62,7 +69,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 33%;
+        width: 34%;
         padding: 1%;
     }
 }
@@ -71,7 +78,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 34%;
+        width: 35%;
         padding: 1%;
     }
 }
@@ -80,7 +87,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 35%;
+        width: 36%;
         padding: 1%;
     }
 }
@@ -89,7 +96,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 36%;
+        width: 37%;
         padding: 1%;
     }
 }
@@ -98,7 +105,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 37%;
+        width: 38%;
         padding: 1%;
     }
 }
@@ -107,7 +114,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 38%;
+        width: 39%;
         padding: 1%;
     }
 }
@@ -116,7 +123,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 39%;
+        width: 40%;
         padding: 1%;
     }
 }
@@ -125,7 +132,7 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 40%;
+        width: 41%;
         padding: 1%;
     }
 }
@@ -134,12 +141,13 @@ a{
     .nav-right{
         margin-top: -4%;
         float:right;
-        width: 41%;
+        width: 42%;
         padding: 1%;
     }
 }
 
 /* Hamburger navbar */
+/* Implemented using javaScript in the next phase */
 @media screen and (max-width: 1123px) {
     
 }
