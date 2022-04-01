@@ -24,6 +24,12 @@ a{
     color: white;
 }
 
+.active-menu{
+    margin:3%;
+    background-color: #F6F6F6;
+    color:black;
+}
+
 .nav-menue-logo{
     width: 25px;
 }
@@ -41,6 +47,99 @@ a{
     width:14%;
 }
 
-/*@media screen and (max-width: 800px) {
+/* To make the navBar responsive with all screen sizes */
+
+@media screen and (max-width: 1484px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 32%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 33%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1395px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 34%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1354px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 35%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1316px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 36%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 37%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 38%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1212px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 39%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 40%;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1151px) {
+    .nav-right{
+        margin-top: -4%;
+        float:right;
+        width: 41%;
+        padding: 1%;
+    }
+}
+
+/* Hamburger navbar */
+@media screen and (max-width: 1123px) {
     
-}*/
+}
