@@ -5,7 +5,7 @@
     margin-left: 20%;
 }
 #student-changes{
-    padding-top: 15%;
+    padding-top: 5%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -34,11 +34,11 @@ label{
     font-size: 120%;
     font-weight: bold;
 }
-.text-input{
-    padding: 6px 10px;
-    margin: 6px ;
-    box-sizing: border-box;
-    font-size: 120%;
+.text-input, #date-button{
+    font-size: 15px;
+    border: 1px solid ;
+    border-radius: 25px;
+    width: 200px;
 }
 #save{
     background-color: #04aa6d;
@@ -48,6 +48,16 @@ label{
     vertical-align: middle;
     padding: 6px 18px;
     margin-left: 25%;
+}
+#department{
+    font-size: 15px;
+    border: 1px solid ;
+    border-radius: 25px;
+    width: 200px;
+}
+.select-button{
+    border: 1px solid ;
+    border-radius: 25px;
 }
 
 
@@ -60,7 +70,7 @@ label{
     right: 0;
     top: 10;
     width: 40%;
-    height: 50%;
+    height: 40%;
     padding-top: 20%;
     padding-bottom: 20%;
     padding-right: 3%;
