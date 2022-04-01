@@ -1,4 +1,4 @@
-img{
+#Student-img{
     border-radius: 50%;
     width: 130px;
     height: 130px;
@@ -64,6 +64,7 @@ label{
     padding-top: 30%;
     padding-bottom: 20%;
     padding-right: 3%;
+    margin-top: -10%;
 }
 #info-con{
     background-color: rgb(105,142,162,0.1);
@@ -111,3 +112,6 @@ input:checked + .slider:before {
     transform: translateX(20px);
 }
 
+#changes-con{
+    margin-top: -25%;
+}
