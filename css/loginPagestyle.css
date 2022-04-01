@@ -51,12 +51,11 @@ form{
 
 #login{
     margin:auto;
-    background-color: #8EACDA;
+    background-color: #204c8f;
     color: white;
     border-radius: 20px;
     font-size: 18px;
-    padding: 6px 18px;
-}
+    padding: 6px 18px;}
 
 img{
     width:70%;
