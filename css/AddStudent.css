@@ -1,6 +1,9 @@
 #new-student 
 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .text-input, .select-button, .date-button, .cancel , .submit
 {
@@ -30,6 +33,12 @@
     color: white;
     background-color: blue;
     height: 40px;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 
