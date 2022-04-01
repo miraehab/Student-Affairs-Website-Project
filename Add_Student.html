@@ -2,10 +2,26 @@
 <html>
     <header>
         <title>Add new student</title>
-       <!-- <link rel="stylesheet" href="css/style.css">    -->
         <link rel="stylesheet" href="css/AddStudent.css">
+        <link rel="stylesheet" href="./css/NavBar.css"/>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
     </header>
     <body>
+        <div class="nav">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <a href="./Add_Student.html" class="active-menu">Add Student <img src="./images/add.png" class="nav-menue-logo"/></a>
+                    <a href="./Edit_student_data.html" class="nav-menu">Edit Student info <img src="./images/edit.png" class="nav-menue-logo"/></a>
+                    <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png" class="nav-menue-logo"/></a>
+                </div>
+                <div class="nav-right">
+                    <a href="#" class="nav-menu">Assign Department <img src="./images/department.png" class="nav-menue-logo"/></a>
+                    <a href="./View-all.html" class="nav-menu">View All Students <img src="./images/all.png" class="nav-menue-logo"/></a>
+                    <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png" class="nav-menue-logo"/></a>
+                </div>
+            </nav>
+            <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo"/></a>
+        </div>
         <div id="new-student">
             <div class="name">
                 <label class="student-title">Student Name:</label><br>
@@ -13,8 +29,8 @@
             </div>
             <br>
             <div class="id">
-                    <label class="student-title">Student ID:</label><br>
-                    <input  class="text-input" type="text" placeholder="20######">
+                <label class="student-title">Student ID:</label><br>
+                <input  class="text-input" type="text" placeholder="20######">
             </div>
             <br>
             <div class="gpa">
@@ -77,10 +93,10 @@
                 </label>
             </div>
             <br>
-            <div class="btns">
-                <button type="button" class="cancel">Cancel</button>
-                <button type="button" class="submit">Add</button>
-            </div>
+        </div>
+        <div class="btns">
+            <button type="button" class="submit">Add</button>
+            <button type="button" class="cancel">Cancel</button>
         </div>
     </body>
 </html>
