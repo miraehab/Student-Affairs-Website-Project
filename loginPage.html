@@ -1,31 +1,29 @@
 <!DOCTYPE html> 
 <html> 
-<header>
-    <title>login page</title>
-    <link rel="stylesheet" href="css/loginPagestyle.css">
-
-
-</header>
-<body>
-<form  method="post" action="">
-    <div class="container">
-        <img src="./images/logo.png"
-        width="170" height="140">
-            <br>
-            <input class="inputs" type="text" name="username" placeholder="Enter username" required>
-                <label for="password"></label>
-                <input class="inputs" type="text" name="password" placeholder="Enter password" required>
-                <br>
-                <label ><input class="inputs" type="checkbox" checked="checked" name="remember"> Remember me</label>
-                <br>
-                <br>
-                <a id="link" href="#">Forgot your password? </a>
-                <br>
-                <br>
-                <input  type="submit" value="login">
-</div>
-</form>
-</body>
+    <header>
+        <title>login page</title>
+        <link rel="stylesheet" href="css/loginPagestyle.css">
+    </header>
+    <body>
+        <form  method="post" action="">
+            <div class="container">
+                <a href="./HomePage.html"><img src="./images/logo.png"
+                width="170" height="140"></a>
+                    <br>
+                    <input class="input-name" type="text" name="username" placeholder="Enter username" required>
+                        <label for="password"></label>
+                        <input class="input-pass" type="text" name="password" placeholder="Enter password" required>
+                        <br>
+                        <label ><input class="inputs" type="checkbox" checked="checked" name="remember"> Remember me</label>
+                        <br>
+                        <br>
+                        <a id="link" href="#">Forgot your password? </a>
+                        <br>
+                        <br>
+                        <input  type="submit" value="login" id="login">
+            </div>
+        </form>
+    </body>
 
 </html>
 
