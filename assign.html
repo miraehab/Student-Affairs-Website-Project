@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title id="tit">Assign Department</title>
+        <link rel="stylesheet" href="./css/assign.css">
+        <link rel="stylesheet" href="./css/NavBar.css"/>
+    </head>
+    <body >
+        <div class="student">
+            <div class="nav">
+                <nav class="nav-bar">
+                    <div class="nav-left">
+                        <a href="./Add_Student.html" class="nav-menu">Add Student <img src="./images/add.png" class="nav-menue-logo"/></a>
+                        <a href="./Edit_student_data.html" class="nav-menu">Edit Student info <img src="./images/edit.png" class="nav-menue-logo"/></a>
+                        <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png" class="nav-menue-logo"/></a>
+                    </div>
+                    <div class="nav-right">
+                        <a href="./assign.html" class="active-menu-right">Assign Department <img src="./images/department.png" class="nav-menue-logo"/></a>
+                        <a href="./View-all.html" class="nav-menu">View All Students <img src="./images/all.png" class="nav-menue-logo"/></a>
+                        <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png" class="nav-menue-logo"/></a>
+                    </div>
+                </nav>
+                <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo"/></a>
+            </div>
+            <h1>Choosing Student's department </h1>
+            <br> <a href="./erorr.html"> <img src="./images/female_user.png" alt="user's info" width="100px" height="100px"></a> <br>
+            <div class="student's info">
+                 <p class="text-input" type="text" id="id" > <b> Student ID : </b> 20202232 </p>
+                 <p class="text-input" type="text" id="name"> <b> Student Name : </b> Mohamed Ahmed</p>
+                 <p class="text-input" type="text" id="level"> <b> Student Level : </b> 2</p>
+                <br><div class="choose dep.">
+                    <label for="department" ><b>Choose Department :</b></label>
+                    <select name="department" id="dep" class="opt-btutton">
+                            <option value="0">choose dipartment</option>
+                            <option value="1">CS</option>
+                            <option value="2">IS</option>
+                            <option value="3">AI</option>
+                            <option value="4">IT</option>
+                            <option value="5">DS</option>
+                        </select>
+                </div><br>
+            </div>
+            <div ><button class="sub" target="_self">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
