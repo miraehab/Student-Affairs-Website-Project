@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
     <header>
+        <title>Add new student</title>
+       <!-- <link rel="stylesheet" href="css/style.css">    -->
+        <link rel="stylesheet" href="css/AddStudent.css">
     </header>
     <body>
         <div id="new-student">
-            <div class="part">
-                <label class="student-title">Student Name</label>
-                <input  class="text-input" type="text" placeholder="Enter Student Nmae">
+            <div class="name">
+                <label class="student-title">Student Name</label><br>
+                <input  class="text-input" type="text" placeholder="Enter Student Name">
             </div>
-            <div class="part">
-                    <label class="student-title">Student ID</label>
-                    <input  class="text-input" type="text" placeholder="Enter Student ID">
+            <br>
+            <div class="id">
+                    <label class="student-title">Student ID</label><br>
+                    <input  class="text-input" type="text" placeholder="20######">
             </div>
-            <div class="part">
-                <label class="student-title">GPA</label>
+            <br>
+            <div class="gpa">
+                <label class="student-title">GPA</label><br>
                 <input  class="text-input" type="text" placeholder="Enter GPA value">
             </div>
-            <div class="part">
-                <label class="student-title">Email Address</label>
+            <br>
+            <div class="email">
+                <label class="student-title">Email Address</label><br>
                 <input  class="text-input" type="text" placeholder="Enter Student Email Address">
             </div>
-            <div class="part">
-                <label class="student-title">Student Level</label>
+            <br>
+            <div class="level">
+                <label class="student-title">Student Level</label><br>
                 <select class="select-button">
                     <option value="5">Choose a level</option>
                     <option value="0">1</option>
@@ -30,8 +37,9 @@
                     <option value="3">4</option>
                 </select>
             </div>
-            <div class="part">
-                <label class="student-title">Department</label>
+            <br>
+            <div class="department">
+                <label class="student-title">Department</label><br>
                 <select class="select-button">
                     <option value="5">Choose a Department</option>
                     <option value="0">CS</option>
@@ -41,32 +49,36 @@
                     <option value="4">AI</option>
                 </select>
             </div>
-            <div class="part">
-                <label class="student-title">Date of birthday</label>
-                <input id="date-button" type="date" > <!--value  is 2002-07-16 to show Sara's birthday-->
+            <br>
+            <div class="birthdate">
+                <label class="student-title">Date of birthday</label><br>
+                <input Class="date-button" type="date" > <!--value  is 2002-07-16 to show Sara's birthday-->
             </div>
-            <div class="part">
-                <label class="student-title">Gender</label>
+            <br>
+            <div class="gender">
+                <label class="student-title">Gender</label><br>
                 <select class="select-button">
                     <option value="2">Choose a gender</option>
                     <option value="0">Male</option>
                     <option value="1">Female</option> 
                 </select>
             </div>
-            <div class="part">
-                <label class="student-title">Mobile Number</label>
+            <br>
+            <div class="phone">
+                <label class="student-title">Mobile Number</label><br>
                 <input  class="text-input" type="text" placeholder="01#########">
             </div>
-            <div class="part">
+            <br>
+            <div class="status">
                 <label class="student-title">Status</label>
-                <input id="toggel-button" type="checkbox" value="true">
+                <input id="toggel-button" type="checkbox">
+                <span class="slider round"></span>
             </div>
-            <form>
-                <input type="submit" value="Add Student" class="changes">
-            </form>
-            <form>
-                <input type="button" value="Cancel" class="changes">
-            </form>
+            <br>
+            <div class="buttons">
+                <button class="cancel">Cancel</button>
+                <button class="submit">Add</button>
+            </div>
 
         </div>
     </body>

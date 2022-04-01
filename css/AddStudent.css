@@ -1,0 +1,19 @@
+#new-student 
+{
+    text-align: center;
+}
+
+.student-title
+{
+    color: #000;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-input , .select-button , .date-button , .cancel , .submit
+{
+    border: 1px solid ;
+    border-radius: 25px;
+}
