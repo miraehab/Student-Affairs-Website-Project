@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-right{
+    /*margin-left: 65%;*/
+    margin-top: -4%;
+    float:right;
+    width: 31%;
+    padding: 1%;
+}
+
+.nav-left{
+    width:50%;
+    padding: 1%;
+}
+
+.nav-menu{
+    margin:3%;
+    color: white;
+}
+
+.nav-menue-logo{
+    width: 25px;
+}
+
+.nav-bar{
+    margin:0;
+    background-color: #698EA2;
+}
+
+.logo{
+    margin:auto;
+    display: block;
+    margin-left: 43%;
+    margin-top: -4%;
+    width:14%;
+}
+
+/*@media screen and (max-width: 800px) {
+    
+}*/
