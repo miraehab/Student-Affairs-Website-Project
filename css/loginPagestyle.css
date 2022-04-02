@@ -55,7 +55,16 @@ form{
     color: white;
     border-radius: 20px;
     font-size: 18px;
-    padding: 6px 18px;}
+    padding: 6px 18px;
+}
+#login:active{
+    transform: scale(0.98);
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+#login:hover {
+    background-color: #3367b5;
+    color: white;
+} 
 
 img{
     width:70%;
