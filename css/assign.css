@@ -11,13 +11,14 @@ button.sub{
     left: 250px;
     display: inline;
     width: 100px;
-    background-color:rgb(181, 236, 224) ;
-    border: 2px solid rgb(75, 189, 164) ;
-    color: #23406d;
-    border-radius: 100px;
     padding: 10px 10px;
     transition-duration: 0.02s;
     text-align: middle;
+    margin:auto;
+    background-color: #204c8f;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
 }
 button.sub:active{
     transform: scale(0.98);
