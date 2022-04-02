@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <title>Add new student</title>
-        <link rel="stylesheet" href="css/AddStudent.css">
-        <link rel="stylesheet" href="./css/NavBar.css"/>
-        <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+<header>
+    <title>Add new student</title>
+    <link rel="stylesheet" href="css/search&viewStudents.css">
+    <link rel="stylesheet" href="css/AddStudent.css">
+    <link rel="stylesheet" href="./css/NavBar.css" />
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
 
-    </header>
-    <body>
-        <div class="nav">
-            <nav class="nav-bar">
-                <div class="nav-left">
-                    <a href="./Add_Student.html" class="active-menu-left">Add Student <img src="./images/add.png" class="nav-menue-logo"/></a>
-                    <a href="./Edit_student_data.html" class="nav-menu">Edit Student info <img src="./images/edit.png" class="nav-menue-logo"/></a>
-                    <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png" class="nav-menue-logo"/></a>
-                </div>
-                <div class="nav-right">
-                    <a href="./assign.html" class="nav-menu">Assign Department <img src="./images/department.png" class="nav-menue-logo"/></a>
-                    <a href="./View-all.html" class="nav-menu">View All Students <img src="./images/all.png" class="nav-menue-logo"/></a>
-                    <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png" class="nav-menue-logo"/></a>
-                </div>
-            </nav>
-            <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo"/></a>
+</header>
+
+<body>
+    <div class="nav">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="./Add_Student.html" class="active-menu-left">Add Student <img src="./images/add.png"
+                        class="nav-menue-logo" /></a>
+                <a href="./Edit_student_data.html" class="nav-menu">Edit Student info <img src="./images/edit.png"
+                        class="nav-menue-logo" /></a>
+                <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png"
+                        class="nav-menue-logo" /></a>
+            </div>
+            <div class="nav-right">
+                <a href="./assign.html" class="nav-menu">Assign Department <img src="./images/department.png"
+                        class="nav-menue-logo" /></a>
+                <a href="./View-all.html" class="nav-menu">View All Students <img src="./images/all.png"
+                        class="nav-menue-logo" /></a>
+                <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png"
+                        class="nav-menue-logo" /></a>
+            </div>
+        </nav>
+        <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo" /></a>
+    </div>
+    <div id="new-student">
+        <div class="photo">
+            <img id="Student-img" src="./images/general_user.jpg" alt="Student picture ">
+            <button><i class="fas fa-pen" style='font-size:15px'></i></button>
         </div>
-        <div id="new-student">
-            <div class="photo">
-                <img id="Student-img" src="./images/general_user.jpg" alt="Student picture ">
-                <button><i class="fas fa-pen" style='font-size:15px'></i></button>
-            </div>
-            <div class="name">
-                <label class="student-title">Student Name:</label><br>
-                <input  class="text-input" type="text" placeholder="Enter Student Name">
-            </div>
-            <br>
-            <div class="id">
-                <label class="student-title">Student ID:</label><br>
-                <input  class="text-input" type="text" placeholder="20######">
-            </div>
-            <br>
-            <div class="gpa">
-                <label class="student-title">GPA:</label><br>
-                <input  class="text-input" type="text" placeholder="Enter GPA value">
-            </div>
-            <br>
-            <div class="email">
-                <label class="student-title">Email Address:</label><br>
-                <input  class="text-input" type="text" placeholder="Enter Student Email Address">
-            </div>
-            <br>
-            <div class="level">
-                <label class="student-title">Student Level:</label><br>
-                <select class="select-button">
-                    <option value="5">Choose a level</option>
-                    <option value="0">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                </select>
-            </div>
-            <br>
-            <div class="department">
-                <label class="student-title">Department:</label><br>
-                <select class="select-button">
-                    <option value="5">Choose a Department</option>
-                    <option value="0">CS</option>
-                    <option value="1">IS</option>
-                    <option value="2">IT</option>
-                    <option value="3">DS</option>
-                    <option value="4">AI</option>
-                </select>
-            </div>
-            <br>
-            <div class="birthdate">
-                <label class="student-title">Date of birth:</label><br>
-                <input Class="date-button" type="date" > <!--value  is 2002-07-16 to show Sara's birthday-->
-            </div>
-            <br>
-            <div class="gender">
-                <label class="student-title">Gender:</label><br>
-                <select class="select-button">
-                    <option value="2">Choose a gender</option>
-                    <option value="0">Male</option>
-                    <option value="1">Female</option> 
-                </select>
-            </div>
-            <br>
-            <div class="phone">
-                <label class="student-title">Mobile Number:</label><br>
-                <input  class="text-input" type="text" placeholder="01#########">
-            </div>
-            <br>
-            <div class="status">
-                <label class="student-title">Status:</label>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <br>
-            <div class="btns">
-                <button type="button" class="cancel">Cancel</button>
-                <button type="button" class="submit">Add</button>
-            </div>
+        <div class="name">
+            <label class="student-title">Student Name:</label><br>
+            <input class="text-input" type="text" placeholder="Enter Student Name">
         </div>
-    </body>
+        <br>
+        <div class="id">
+            <label class="student-title">Student ID:</label><br>
+            <input class="text-input" type="text" placeholder="20######">
+        </div>
+        <br>
+        <div class="gpa">
+            <label class="student-title">GPA:</label><br>
+            <input class="text-input" type="text" placeholder="Enter GPA value">
+        </div>
+        <br>
+        <div class="email">
+            <label class="student-title">Email Address:</label><br>
+            <input class="text-input" type="text" placeholder="Enter Student Email Address">
+        </div>
+        <br>
+        <div class="level">
+            <label class="student-title">Student Level:</label><br>
+            <select class="select-button">
+                <option value="5">Choose a level</option>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+            </select>
+        </div>
+        <br>
+        <div class="department">
+            <label class="student-title">Department:</label><br>
+            <select class="select-button">
+                <option value="5">Choose a Department</option>
+                <option value="0">CS</option>
+                <option value="1">IS</option>
+                <option value="2">IT</option>
+                <option value="3">DS</option>
+                <option value="4">AI</option>
+            </select>
+        </div>
+        <br>
+        <div class="birthdate">
+            <label class="student-title">Date of birth:</label><br>
+            <input Class="date-button" type="date">
+            <!--value  is 2002-07-16 to show Sara's birthday-->
+        </div>
+        <br>
+        <div class="gender">
+            <label class="student-title">Gender:</label><br>
+            <select class="select-button">
+                <option value="2">Choose a gender</option>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+        </div>
+        <br>
+        <div class="phone">
+            <label class="student-title">Mobile Number:</label><br>
+            <input class="text-input" type="text" placeholder="01#########">
+        </div>
+        <br>
+        <div class="status">
+            <label class="student-title">Status:</label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <br>
+        <div class="btns">
+            <button type="button" class="cancel">Cancel</button>
+            <button type="button" class="submit">Add</button>
+        </div>
+    </div>
+</body>
+
 </html>

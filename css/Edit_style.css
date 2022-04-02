@@ -1,10 +1,11 @@
-#Student-img{
+#Student-img {
     border-radius: 50%;
     width: 130px;
     height: 130px;
     margin-left: 20%;
 }
-#student-changes{
+
+#student-changes {
     padding-top: 5%;
     position: absolute;
     display: flex;
@@ -14,33 +15,39 @@
     width: 60%;
     height: 100%;
 }
-.part{  
+
+.part {
     width: 30%;
     padding-bottom: 3%;
 }
-label{
+
+label {
     display: inline;
 }
-#center{
+
+#center {
     margin: auto;
     width: 60%;
     padding: 10px;
     padding-bottom: 2%;
 }
-.changes-title{
-    display: inline ;
+
+.changes-title {
+    display: inline;
     font: 50px;
-    margin:5%;
+    margin: 5%;
     font-size: 120%;
     font-weight: bold;
 }
-.text-input, #date-button{
+
+.text-input, #date-button {
     font-size: 15px;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 25px;
     width: 200px;
 }
-#save{
+
+#save {
     background-color: #04aa6d;
     color: white;
     border-radius: 20px;
@@ -49,20 +56,30 @@ label{
     padding: 6px 18px;
     margin-left: 25%;
 }
-#department{
+
+#save:hover {
+    background-color: #44b48b;
+    color: white;
+}
+
+#save:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#department {
     font-size: 15px;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 25px;
     width: 200px;
 }
-.select-button{
-    border: 1px solid ;
+
+.select-button {
+    border: 1px solid;
     border-radius: 25px;
 }
 
-
-
-#student-info{
+#student-info {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -75,26 +92,30 @@ label{
     padding-bottom: 20%;
     padding-right: 3%;
 }
-#info-con{
-    background-color: rgb(105,142,162,0.1);
+
+#info-con {
+    background-color: rgb(105, 142, 162, 0.1);
     border-radius: 15px;
     padding-top: 2%;
     padding-bottom: 3%;
 }
-li{
+
+li {
     list-style: none;
     padding-bottom: 3%;
 }
-.data-title{
+
+.data-title {
     font-weight: bold;
     font-size: 120%;
 }
-i{
+
+i {
     padding-right: 20%;
     font-size: 120%;
 }
 
-#delete{
+#delete {
     background-color: #DB3B3B;
     color: white;
     border-radius: 20px;
@@ -102,25 +123,39 @@ i{
     padding: 6px 18px;
     margin-left: 40%;
 }
-h2{
+
+#delete:hover {
+    background-color: #f56161;
+    color: white;
+}
+
+#delete:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+h2 {
     text-align: center;
 }
-.switch{
+
+.switch {
     margin-left: 10px;
     margin-top: 0px;
     width: 40px;
     height: 22px;
 }
+
 .slider:before {
     height: 14px;
     width: 14px;
 }
-input:checked + .slider:before {
+
+input:checked+.slider:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
 }
 
-#changes-con{
+#changes-con {
     margin-top: -10%;
 }

@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <title>Edit student data</title>
-        <link rel="stylesheet" href="css/search&viewStudents.css">
-        <link rel="stylesheet" href="css/Edit_style.css">
-        <link rel="stylesheet" href="./css/NavBar.css"/>
-        <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+<header>
+    <title>Edit student data</title>
+    <link rel="stylesheet" href="css/search&viewStudents.css">
+    <link rel="stylesheet" href="css/Edit_style.css">
+    <link rel="stylesheet" href="./css/NavBar.css" />
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
 
-    </header>
-    <body>
-        <div class="nav">
-            <nav class="nav-bar">
-                <div class="nav-left">
-                    <a href="./Add_Student.html" class="nav-menu">Add Student <img src="./images/add.png" class="nav-menue-logo"/></a>
-                    <a href="./Edit_student_data.html"class="active-menu-left">Edit Student info <img src="./images/edit.png" class="nav-menue-logo"/></a>
-                    <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png" class="nav-menue-logo"/></a>
-                </div>
-                <div class="nav-right">
-                    <a href="./assign.html" class="nav-menu">Assign Department <img src="./images/department.png" class="nav-menue-logo"/></a>
-                    <a href="./View-all.html" class="nav-menu">View All Students <img src="./images/all.png" class="nav-menue-logo"/></a>
-                    <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png" class="nav-menue-logo"/></a>
-                </div>
-            </nav>
-            <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo"/></a>
-        </div>
-        <div id="student-changes">
-            <div id="changes-con">
-                <img id="Student-img" src="./images/female_user.png" alt="Student picture ">
-                <button><i class="fas fa-pen" style='font-size:15px'></i></button>
+</header>
+
+<body>
+    <div class="nav">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="./Add_Student.html" class="nav-menu">Add Student <img src="./images/add.png"
+                        class="nav-menue-logo" /></a>
+                <a href="./Edit_student_data.html" class="active-menu-left">Edit Student info <img
+                        src="./images/edit.png" class="nav-menue-logo" /></a>
+                <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png"
+                        class="nav-menue-logo" /></a>
+            </div>
+            <div class="nav-right">
+                <a href="./assign.html" class="nav-menu">Assign Department <img src="./images/department.png"
+                        class="nav-menue-logo" /></a>
+                <a href="./View-all.html" class="nav-menu">View All Students <img src="./images/all.png"
+                        class="nav-menue-logo" /></a>
+                <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png"
+                        class="nav-menue-logo" /></a>
+            </div>
+        </nav>
+        <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo" /></a>
+    </div>
+    <div id="student-changes">
+        <div id="changes-con">
+            <img id="Student-img" src="./images/female_user.png" alt="Student picture ">
+            <button><i class="fas fa-pen" style='font-size:15px'></i></button>
 
             <div id="center">
                 <!--use label to when a user clicks the text within the <label> element, it toggles the input (this increases the hit area)-->
@@ -36,21 +43,22 @@
                     <input class="text-input" type="text" value="Sara Mohamed">
                 </div>
                 <div class="part">
-                        <label class="changes-title">Student ID</label>
-                        <input  class="text-input" type="text" value="2020222">
+                    <label class="changes-title">Student ID</label>
+                    <input class="text-input" type="text" value="2020222">
                 </div>
                 <div class="part">
                     <label class="changes-title">GPA</label>
-                    <input  class="text-input" type="text" value="3.33">
+                    <input class="text-input" type="text" value="3.33">
                 </div>
                 <div class="part">
                     <label class="changes-title">Email Address</label>
-                    <input  class="text-input" type="text" value="Sara@gmail.com">
+                    <input class="text-input" type="text" value="Sara@gmail.com">
                 </div>
                 <div class="part">
                     <label class="changes-title">Student Level</label>
                     <select class="select-button">
-                        <option value="0">2</option> <!--option 0 is 2 to show Sara's level-->
+                        <option value="0">2</option>
+                        <!--option 0 is 2 to show Sara's level-->
                         <option value="1">1</option>
                         <option value="2">3</option>
                         <option value="3">4</option>
@@ -58,22 +66,25 @@
                 </div>
                 <div class="part">
                     <label class="changes-title">Department</label>
-                    <i id="department">General</i> <!--use i element because not allowed to edit-->
+                    <i id="department">General</i>
+                    <!--use i element because not allowed to edit-->
                 </div>
                 <div class="part">
                     <label class="changes-title">Date of birth</label>
-                    <input id="date-button" type="date" value="2002-07-16"> <!--value is 2002-07-16 to show Sara's birthday-->
+                    <input id="date-button" type="date" value="2002-07-16">
+                    <!--value is 2002-07-16 to show Sara's birthday-->
                 </div>
                 <div class="part">
                     <label class="changes-title">Gender</label>
                     <select class="select-button">
-                        <option value="0">Female</option> <!--option 0 is female to show Sara's gender-->
+                        <option value="0">Female</option>
+                        <!--option 0 is female to show Sara's gender-->
                         <option value="1">Male</option>
                     </select>
                 </div>
                 <div class="part">
                     <label class="changes-title">Mobile Number</label>
-                    <input  class="text-input" type="text" value="01111112">
+                    <input class="text-input" type="text" value="01111112">
                 </div>
                 <div class="part">
                     <label class="changes-title">Status</label>
@@ -81,18 +92,18 @@
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
+                </div>
             </div>
-            </div>
-            
+
             <form>
                 <input type="submit" id="save" value="Save">
             </form>
         </div>
-        </div>
+    </div>
 
 
-        <div id="student-info">
-            <div id="info-con">
+    <div id="student-info">
+        <div id="info-con">
             <h2>Student Information</h2>
             <ul>
                 <!-- span is the block-level elements in HTML -->
@@ -142,5 +153,6 @@
             </form>
         </div>
     </div>
-    </body>
+</body>
+
 </html>

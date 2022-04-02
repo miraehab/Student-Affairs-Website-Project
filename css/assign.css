@@ -1,32 +1,41 @@
-div.info {
-    margin:10px;
-    font-size: large;
-    margin-top: 50px;
-    text-align: left;
-    font-family: sans-serif;
+#assign
+{
+    margin-left: 35%;
+    margin-top: 2%;
 }
-button.sub{
-    position: relative;
-    top: 10px;
-    left: 250px;
+#Student-img{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+.info {
     display: inline;
-    width: 100px;
-    padding: 10px 10px;
-    transition-duration: 0.02s;
-    text-align: middle;
-    margin:auto;
-    background-color: #204c8f;
-    color: white;
-    border-radius: 20px;
-    font-size: 18px;
+    font: 50px;
+    margin: 5%;
+    font-size: 120%;
 }
-button.sub:active{
+#dep
+{
+    font-size: 15px;
+    border: 1px solid ;
+    border-radius: 25px;
+    width: 200px;
+}
+.sub{
+  color: white;
+  background-color: #04aa6d;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 6px 18px;
+  margin-left: 15%;
+}
+.sub:active{
     transform: scale(0.98);
-            /* Scaling button to 0.98 to its original size */
             box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-            /* Lowering the shadow */
 }
-button.sub:hover {
-    background-color: #4c74af;
+.sub:hover {
+    background-color: #44b48b;
     color: white;
 } 
