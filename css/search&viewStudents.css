@@ -5,9 +5,7 @@
     display: flex;
     border: 1px solid ;
     border-radius: 25px;
-    margin-top: 120px;
     margin-left: 110px;
-    margin-bottom: 0;
 }
 .search input {
     padding-left: 25px;
@@ -23,77 +21,58 @@
 }
 .search button{
     width: 40px;
-    padding: 0;
-    margin: 0;
     border: solid transparent;
     background: transparent;
     opacity: 0.8; 
 }
-.student-label,.student-label2{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 120px;
-    
+table {
+    border-collapse: collapse;
 }
-.student-label p,.student-label2 p{
+.tbl,.tblsearch{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-right: 60px;
+}
+.tblsearch{
+    margin-top: 60px;
+}
+.tbl button, .tblsearch button{
+    width: 40px;
+    border: solid transparent;
+    background: transparent;
+    opacity: 0.8; 
+}
+.tbl img, .tblsearch img{
+    width: 90px;
+    height: 90px;
+}
+tr.head{
+    justify-content: center;
+}
+tr.rw {
+    padding: 20 0px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.35);
+}
+th, td{
     color: #000;
     font-size: 25px;
     font-style: italic;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
 }
-.student-label2{
-    margin-top: 100px;
-    justify-content: space-evenly;
-}
-.stu-data,.stu-data2{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 100px;
-    justify-content: flex-start;
-}
-.stu-data button,.stu-data2 button {
-    width: 40px;
-    border: solid transparent;
-    background: transparent;
-    opacity: 0.8; 
-    margin-left: 120px;
-    margin-bottom: 10px;
-}
-.student,.view-student {
-    width:72%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 0;
-}
-.student img,.view-student img{
-    width: 90px;
-    height: 90px;
-}
-.student p,.view-student p{
-    color: #000;
-    font-size: 25px;
-    font-style: italic;
+td {
     font-weight: 550;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 180px;
 }
-.view-student{
-    width: 70.5%;
+.tblsearch td{
+    padding: 50px 240px;
 }
-#sid{
-    margin-left: 430;
+td.img{
+    padding: 0 0px;
 }
-hr{
-    width: 77%;
-    margin-left: 80px;
-    margin-bottom: 15px;
-    text-align:center;
-    color: #707070;
-    opacity: 0.35;
+td.btn{
+    padding: 0 0px;
 }
 .switch {
     position: relative;
@@ -101,7 +80,6 @@ hr{
     width: 60px;
     height: 34px;
     margin-top: 20px;
-    margin-left: 90px;
   }
 .switch input {
     opacity: 0;

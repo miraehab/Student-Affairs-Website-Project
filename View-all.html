@@ -1,105 +1,115 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>View All Student</title>
-    <link rel="stylesheet" href="css/search&viewStudents.css">
-    <link rel="stylesheet" href="./css/NavBar.css"/>
-    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>View All Student</title>
+  <link rel="stylesheet" href="css/search&viewStudents.css">
+  <link rel="stylesheet" href="./css/NavBar.css" />
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
 </head>
+
 <body>
-      <div class="nav">
-        <nav class="nav-bar">
-            <div class="nav-left">
-                <a href="./Add_Student.html" class="nav-menu">Add Student <img src="./images/add.png" class="nav-menue-logo"/></a>
-                <a href="./Edit_student_data.html" class="nav-menu">Edit Student info <img src="./images/edit.png" class="nav-menue-logo"/></a>
-                <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png" class="nav-menue-logo"/></a>
-            </div>
-            <div class="nav-right">
-                <a href="./assign.html" class="nav-menu">Assign Department <img src="./images/department.png" class="nav-menue-logo"/></a>
-                <a href="./View-all.html" class="active-menu-right">View All Students <img src="./images/all.png" class="nav-menue-logo"/></a>
-                <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png" class="nav-menue-logo"/></a>
-            </div>
-        </nav>
-        <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo"/></a>
+  <div class="nav">
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="./Add_Student.html" class="nav-menu">Add Student <img src="./images/add.png"
+            class="nav-menue-logo" /></a>
+        <a href="./Edit_student_data.html" class="nav-menu">Edit Student info <img src="./images/edit.png"
+            class="nav-menue-logo" /></a>
+        <a href="./Search.html" class="nav-menu">Search <img src="./images/search.png" class="nav-menue-logo" /></a>
       </div>
-      <div class="student-label2">
-        <p>Name:</p>
-        <p>ID:</p>
-        <p>Status:</p>
+      <div class="nav-right">
+        <a href="./assign.html" class="nav-menu">Assign Department <img src="./images/department.png"
+            class="nav-menue-logo" /></a>
+        <a href="./View-all.html" class="active-menu-right">View All Students <img src="./images/all.png"
+            class="nav-menue-logo" /></a>
+        <a href="./loginPage.html" class="nav-menu">Log in <img src="./images/login.png" class="nav-menue-logo" /></a>
       </div>
-      <div class="stu-data2">
-        <div class="view-student">
-          <img src="images/female_user.png" alt="">
-          <p>Sara Mohamed</p>
-          <p style="margin-left: 30px;">20200222</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <button><i class="fas fa-pen" style='font-size:24px'></i></button>
-      </div><hr>
-      <div class="stu-data2">
-        <div class="view-student">
-          <img src="images/male_user.png" alt="">
-          <p>Mohamed Ahmed</p>
-          <p style="margin-left: 30px;">20200222</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <button><i class="fas fa-pen" style='font-size:24px'></i></button>
-      </div><hr>
-      <div class="stu-data2">
-        <div class="view-student">
-          <img src="images/female_user.png" alt="">
-          <p>Sara Mohamed</p>
-          <p style="margin-left: 30px;">20200222</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <button><i class="fas fa-pen" style='font-size:24px'></i></button>
-      </div><hr>
-      <div class="stu-data2">
-        <div class="view-student">
-          <img src="images/female_user.png" alt="">
-          <p>Sara Mohamed</p>
-          <p style="margin-left: 30px;">20200222</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <button><i class="fas fa-pen" style='font-size:24px'></i></button>
-      </div><hr>
-      <div class="stu-data2">
-        <div class="view-student">
-          <img src="images/male_user.png" alt="">
-          <p>Mohamed Ahmed</p>
-          <p style="margin-left: 30px;">20200222</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <button><i class="fas fa-pen" style='font-size:24px'></i></button>
-      </div><hr>
-      <div class="stu-data2">
-        <div class="view-student">
-          <img src="images/female_user.png" alt="">
-          <p>Sara Mohamed</p>
-          <p style="margin-left: 30px;">20200222</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <button><i class="fas fa-pen" style='font-size:24px'></i></button>
-      </div><hr>
-    
-    
+    </nav>
+    <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo" /></a>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead>
+        <tr class="head">
+          <th></th>
+          <th>Name:</th>
+          <th>ID:</th>
+          <th>Status:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="rw">
+          <td class="img"><img src="images/female_user.png" alt=""></td>
+          <td class="name">Sara Mohamed</td>
+          <td class="id">20200222</td>
+          <td class="swtch"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></td>
+          <td class="btn"><button><i class="fas fa-pen" style='font-size:24px'></i></button></td>
+        </tr>
+
+        <tr class="rw">
+          <td class="img"><img src="images/male_user.png" alt=""></td>
+          <td class="name">Mohamed Ahmed</td>
+          <td class="id">20200222</td>
+          <td class="swtch"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></td>
+          <td class="btn"><button><i class="fas fa-pen" style='font-size:24px'></i></button></td>
+        </tr>
+        <tr class="rw">
+          <td class="img"><img src="images/female_user.png" alt=""></td>
+          <td class="name">Sara Mohamed</td>
+          <td class="id">20200222</td>
+          <td class="swtch"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></td>
+          <td class="btn"><button><i class="fas fa-pen" style='font-size:24px'></i></button></td>
+        </tr>
+        <tr class="rw">
+          <td class="img"><img src="images/male_user.png" alt=""></td>
+          <td class="name">Mohamed Ahmed</td>
+          <td class="id">20200222</td>
+          <td class="swtch"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></td>
+          <td class="btn"><button><i class="fas fa-pen" style='font-size:24px'></i></button></td>
+        </tr>
+
+        <tr class="rw">
+          <td class="img"><img src="images/female_user.png" alt=""></td>
+          <td class="name">Sara Mohamed</td>
+          <td class="id">20200222</td>
+          <td class="swtch"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></td>
+          <td class="btn"><button><i class="fas fa-pen" style='font-size:24px'></i></button></td>
+        </tr>
+
+        <tr class="rw">
+          <td class="img"><img src="images/male_user.png" alt=""></td>
+          <td class="name">Mohamed Ahmed</td>
+          <td class="id">20200222</td>
+          <td class="swtch"><label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></td>
+          <td class="btn"><button><i class="fas fa-pen" style='font-size:24px'></i></button></td>
+        </tr>
+      </tbody>
+
+
+    </table>
+  </div>
+
+
+
 </body>
+
 </html>
