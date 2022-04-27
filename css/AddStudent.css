@@ -75,3 +75,9 @@ input:checked+.slider:before {
   -ms-transform: translateX(18px);
   transform: translateX(18px);
 }
+.error{
+  color: #cc0033;
+  font-size: 18px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
