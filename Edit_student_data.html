@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/Edit_style.css">
     <link rel="stylesheet" href="./css/NavBar.css" />
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <script src="JS/validatedStudentInfo.js"></script>
 
 </header>
 
@@ -31,128 +32,131 @@
         </nav>
         <a href="./HomePage.html"><img src="./images/nav-logo.png" class="logo" /></a>
     </div>
-    <div id="student-changes">
-        <div id="changes-con">
-            <img id="Student-img" src="./images/female_user.png" alt="Student picture ">
-            <button><i class="fas fa-pen" style='font-size:15px'></i></button>
-
-            <div id="center">
-                <!--use label to when a user clicks the text within the <label> element, it toggles the input (this increases the hit area)-->
-                <div class="part">
-                    <label class="changes-title">Student Name</label>
-                    <input class="text-input" type="text" value="Sara Mohamed">
+    <form>
+        <div id="student-changes">
+            <div id="changes-con">
+                <img id="Student-img" src="./images/female_user.png" alt="Student picture ">
+                <button><i class="fas fa-pen" style='font-size:15px'></i></button>
+    
+                <div id="center">
+                    <!--use label to when a user clicks the text within the <label> element, it toggles the input (this increases the hit area)-->
+                    <div class="part">
+                        <label class="changes-title">Student Name</label>
+                        <input id="NAME" class="text-input" type="text" value="Sara Mohamed">
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Student ID</label>
+                        <input id="IDs" class="text-input" type="text" value="2020222">
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">GPA</label>
+                        <input id="GPA" class="text-input" type="text" value="3.33">
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Email Address</label>
+                        <input id="EMAIL" class="text-input" type="text" value="Sara@gmail.com">
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Student Level</label>
+                        <select  id="LEVEL"  class="select-button">
+                            <option value="0">2</option>
+                            <!--option 0 is 2 to show Sara's level-->
+                            <option value="1">1</option>
+                            <option value="2">3</option>
+                            <option value="3">4</option>
+                        </select>
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Department</label>
+                        <i id="department">General</i>
+                        <!--use i element because not allowed to edit-->
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Date of birth</label>
+                        <input  id="date-button" type="date" value="2002-07-16">
+                        <!--value is 2002-07-16 to show Sara's birthday-->
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Gender</label>
+                        <select id="GENDER" class="select-button">
+                            <option value="0">Female</option>
+                            <!--option 0 is female to show Sara's gender-->
+                            <option value="1">Male</option>
+                        </select>
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Mobile Number</label>
+                        <input id="PHONE" class="text-input" type="text" value="01111112">
+                    </div>
+                    <div class="part">
+                        <label class="changes-title">Status</label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
-                <div class="part">
-                    <label class="changes-title">Student ID</label>
-                    <input class="text-input" type="text" value="2020222">
-                </div>
-                <div class="part">
-                    <label class="changes-title">GPA</label>
-                    <input class="text-input" type="text" value="3.33">
-                </div>
-                <div class="part">
-                    <label class="changes-title">Email Address</label>
-                    <input class="text-input" type="text" value="Sara@gmail.com">
-                </div>
-                <div class="part">
-                    <label class="changes-title">Student Level</label>
-                    <select class="select-button">
-                        <option value="0">2</option>
-                        <!--option 0 is 2 to show Sara's level-->
-                        <option value="1">1</option>
-                        <option value="2">3</option>
-                        <option value="3">4</option>
-                    </select>
-                </div>
-                <div class="part">
-                    <label class="changes-title">Department</label>
-                    <i id="department">General</i>
-                    <!--use i element because not allowed to edit-->
-                </div>
-                <div class="part">
-                    <label class="changes-title">Date of birth</label>
-                    <input id="date-button" type="date" value="2002-07-16">
-                    <!--value is 2002-07-16 to show Sara's birthday-->
-                </div>
-                <div class="part">
-                    <label class="changes-title">Gender</label>
-                    <select class="select-button">
-                        <option value="0">Female</option>
-                        <!--option 0 is female to show Sara's gender-->
-                        <option value="1">Male</option>
-                    </select>
-                </div>
-                <div class="part">
-                    <label class="changes-title">Mobile Number</label>
-                    <input class="text-input" type="text" value="01111112">
-                </div>
-                <div class="part">
-                    <label class="changes-title">Status</label>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+                <button onclick="validateForm()" type="submit" id="save">Save</button>
             </div>
-
-            <form>
-                <input type="submit" id="save" value="Save">
-            </form>
         </div>
-    </div>
+    </form>
+    
 
-
-    <div id="student-info">
-        <div id="info-con">
-            <h2>Student Information</h2>
-            <ul>
-                <!-- span is the block-level elements in HTML -->
-                <li>
-                    <span class="data-title">Student Name: </span>
-                    <i>Sara Mohamed</i>
-                </li>
-                <li>
-                    <span class="data-title">Student ID: </span>
-                    <i>20202222</i>
-                </li>
-                <li>
-                    <span class="data-title">GPA: </span>
-                    <i>3.33</i>
-                </li>
-                <li>
-                    <span class="data-title">Email Address: </span>
-                    <i>Sara@gmail.com</i>
-                </li>
-                <li>
-                    <span class="data-title">Student level: </span>
-                    <i>2</i>
-                </li>
-                <li>
-                    <span class="data-title">Department: </span>
-                    <i>General</i>
-                </li>
-                <li>
-                    <span class="data-title">Date of birth: </span>
-                    <i>16/7/2002</i>
-                </li>
-                <li>
-                    <span class="data-title">Gender: </span>
-                    <i>female</i>
-                </li>
-                <li>
-                    <span class="data-title">Mobile Number: </span>
-                    <i>01111112</i>
-                </li>
-                <li>
-                    <span class="data-title">Status: </span>
-                    <i>Active</i>
-                </li>
-            </ul>
-            <form>
-                <button type="button" id="delete">Delete</button>
-            </form>
+    <form>
+        <div id="student-info">
+            <div id="info-con">
+                <h2>Student Information</h2>
+                <ul>
+                    <!-- span is the block-level elements in HTML -->
+                    <li>
+                        <span class="data-title">Student Name: </span>
+                        <i>Sara Mohamed</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Student ID: </span>
+                        <i>20202222</i>
+                    </li>
+                    <li>
+                        <span class="data-title">GPA: </span>
+                        <i>3.33</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Email Address: </span>
+                        <i>Sara@gmail.com</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Student level: </span>
+                        <i>2</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Department: </span>
+                        <i>General</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Date of birth: </span>
+                        <i>16/7/2002</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Gender: </span>
+                        <i>female</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Mobile Number: </span>
+                        <i>01111112</i>
+                    </li>
+                    <li>
+                        <span class="data-title">Status: </span>
+                        <i>Active</i>
+                    </li>
+                </ul>
+                <form>
+                    <button type="button" id="delete">Delete</button>
+                </form>
+            </div>
         </div>
-    </div>
+    </form>
+    
+
+
 </body>
-
 </html>

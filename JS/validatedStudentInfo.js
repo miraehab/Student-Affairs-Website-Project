@@ -8,6 +8,7 @@ function validateForm() {
 
 
     /*00*/
+    /** */
 /*
     let i = document.getElementById("IDs").value;
     if (){
