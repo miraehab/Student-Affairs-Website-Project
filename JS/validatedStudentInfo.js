@@ -5,6 +5,9 @@ function validateForm() {
        document.getElementById("nn").innerHTML = 55;
     }
 
+
+
+    /*00*/
 /*
     let i = document.getElementById("IDs").value;
     if (){
@@ -50,3 +53,4 @@ function validateForm() {
 
 */
 }
+
