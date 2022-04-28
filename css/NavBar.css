@@ -48,7 +48,7 @@ a{
 
 .logo{
     margin:auto;
-    display: block;
+    display: inline;
     margin-left: 43%;
     margin-top: -4%;
     width:11%;
