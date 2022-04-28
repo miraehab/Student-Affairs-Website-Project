@@ -65,7 +65,7 @@
             <div class="level">
                 <label class="student-title">Student Level:</label><br>
                 <select id="LEVEL" class="select-button" required>
-                    <option value="5"  hidden>Choose a level</option>
+                    <option value="" disabled selected hidden>Choose a level</option>
                     <option value="0">1</option>
                     <option value="1">2</option>
                     <option value="2">3</option>
@@ -76,7 +76,7 @@
             <div class="department">
                 <label class="student-title">Department:</label><br>
                 <select id="DEPARTMENT" class="select-button" required>
-                    <option value="6" hidden >Choose a Department</option>
+                    <option value="" disabled selected hidden>Choose a Department</option>
                     <option value="0">General</option>
                     <option value="1">CS</option>
                     <option value="2">IS</option>
@@ -95,7 +95,7 @@
             <div class="gender">
                 <label class="student-title">Gender:</label><br>
                 <select id="GENDER" class="select-button"  required>
-                    <option value="2" hidden >Choose a gender</option>
+                    <option value="" disabled selected hidden>Choose a gender</option>
                     <option value="0">Male</option>
                     <option value="1">Female</option>
                 </select>
@@ -116,7 +116,7 @@
             <br>
             <div class="btns">
                 <button type="button" class="cancel">Cancel</button>
-                <button  onclick="validateForm()" type="button" class="submit">Add</button>
+                <button  onclick="validateForm()" type="submit" class="submit">Add</button>
             </div>
         </div>
     </form>
