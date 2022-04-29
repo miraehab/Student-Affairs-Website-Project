@@ -9,9 +9,10 @@ function validateForm() {
     const gender = document.getElementById("GENDER");
     const phone = document.getElementById("PHONE");
     const form = document.getElementById("form");
-    console.log(name.value);
+
+
     if(!(/^[A-Za-z\s]+$/.test(name.value))){
-        document.getElementById("nn").innerHTML = "Please enter your full name (firstname & lastname)";
+        document.getElementById("Pname").innerHTML = "Please enter your full name (firstname & lastname)";
     }
       
    

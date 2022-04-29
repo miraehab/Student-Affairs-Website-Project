@@ -44,22 +44,25 @@
             <div class="name">
                 <label class="student-title">Student Name:</label><br>
                 <input id="NAME" class="text-input" type="text" placeholder="Enter Student Name" required>
-                <p class="error" id="nn">invalid</p>
+                <p class="error" id="Pname"></p>
             </div>
             <br>
             <div class="id">
                 <label class="student-title">Student ID:</label><br>
                 <input id="IDs" class="text-input" type="text" placeholder="20######" required>
+                <p class="error" id="Pid"></p>
             </div>
             <br>
             <div class="gpa">
                 <label class="student-title">GPA:</label><br>
                 <input id="GPA" class="text-input" type="text" placeholder="Enter GPA value" required>
+                <p class="error" id="Pgpa"></p>
             </div>
             <br>
             <div class="email">
                 <label class="student-title">Email Address:</label><br>
                 <input  id="EMAIL" class="text-input" type="text" placeholder="Enter Student Email Address" required>
+                <p class="error" id="Pemail"></p>
             </div>
             <br>
             <div class="level">
@@ -70,6 +73,7 @@
                     <option value="1">2</option>
                     <option value="2">3</option>
                     <option value="3">4</option>
+                    <p class="error" id="Plevel"></p>
                 </select>
             </div>
             <br>
@@ -83,6 +87,8 @@
                     <option value="3">IT</option>
                     <option value="4">DS</option>
                     <option value="5">AI</option>
+                    <p class="error" id="Plevel"></p>
+                    <p class="error" id="Pdepart"></p>
                 </select>
             </div>
             <br>
@@ -90,6 +96,7 @@
                 <label class="student-title">Date of birth:</label><br>
                 <input id="date-button" Class="date-button" type="date" required>
                 <!--value  is 2002-07-16 to show Sara's birthday-->
+                <p class="error" id="Pbirth"></p>
             </div>
             <br>
             <div class="gender">
@@ -98,12 +105,14 @@
                     <option value="" disabled selected hidden>Choose a gender</option>
                     <option value="0">Male</option>
                     <option value="1">Female</option>
+                    <p class="error" id="Pgender"></p>
                 </select>
             </div>
             <br>
             <div class="phone">
                 <label class="student-title">Mobile Number:</label><br>
                 <input id="PHONE" class="text-input" type="text" placeholder="01#########" required>
+                <p class="error" id="Pphone"></p>
             </div>
             <br>
             <div class="status">
