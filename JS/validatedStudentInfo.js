@@ -54,3 +54,7 @@ function validateForm() {
         document.getElementById("Pphone").innerHTML = "Invalid phone number";
     }
 }
+
+function ConfirmDeletion(){
+    window.location.href='./DeleteConfirmation.html';
+}
