@@ -39,6 +39,7 @@ table {
     margin-right: 60px;
 }
 .tbl button, .tblsearch button{
+    cursor: pointer;
     width: 40px;
     border: solid transparent;
     background: transparent;
@@ -260,6 +261,20 @@ border-radius: 50%;
         -webkit-transform: translateX(13px);
         -ms-transform: translateX(13px);
         transform: translateX(13px);
+    }
+}
+@media only screen and (min-width: 1380px) and (max-width: 1750px){
+    .tbl,.tblsearch{
+        margin-right: 30px;
+    }
+    td {
+        padding: 50px 90px;
+    }
+    .tblsearch td{
+        padding: 50px 110px;
+    }
+    td.btn{
+        padding: 50px 60px;
     }
 }
 
