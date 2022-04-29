@@ -48,7 +48,6 @@
                     <div class="part">
                         <label class="changes-title">Student ID</label>
                         <input id="IDs" class="text-input" type="text" value="2020222">
-                        <p class="error" id="Pid"></p>
                     </div>
                     <div class="part">
                         <label class="changes-title">GPA</label>
@@ -68,14 +67,13 @@
                             <option value="1">1</option>
                             <option value="2">3</option>
                             <option value="3">4</option>
-                            <p class="error" id="Plevel"></p>
                         </select>
                     </div>
                     <div class="part">
                         <label class="changes-title">Department</label>
                         <i id="department">General</i>
                         <!--use i element because not allowed to edit-->
-                        <p class="error" id="Pdepart"></p>
+                        <p class="error" id="Pid"></p>
                     </div>
                     <div class="part">
                         <label class="changes-title">Date of birth</label>
@@ -105,7 +103,7 @@
                         </label>
                     </div>
                 </div>
-                <button onclick="validateForm()" type="button" id="save">Save</button>
+                <button onclick="validateForm()" type="subimt" id="save">Save</button>
             </div>
         </div>
     </form>
