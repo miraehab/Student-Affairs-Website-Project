@@ -1,0 +1,30 @@
+body{
+    background: url('../images/back-new.png');
+    background-repeat: no-repeat;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #F97D81;
+}
+
+.container{
+    float: right;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.icon{
+    width: 10%;
+    margin-right: 3%;
+}
+
+h2{
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #29264E;
+}
