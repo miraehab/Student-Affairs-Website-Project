@@ -48,6 +48,10 @@ table {
     width: 90px;
     height: 90px;
 }
+#depimg{
+    height: 40px;
+    width: 35px;
+}
 tr.head{
     justify-content: center;
 }
@@ -64,20 +68,25 @@ th, td{
 }
 td {
     font-weight: 550;
-    padding: 50px 180px;
+    padding: 50px 130px;
 }
 td i{
     font-size:26px
 }
 .tblsearch td{
-    padding: 50px 240px;
+    padding: 50px 150px;
+}
+td.btn{
+    padding: 50px 70px;
+    
 }
 td.img{
     padding: 0 0px;
 }
-td.btn{
+.tblsearch td.img{
     padding: 0 0px;
 }
+
 .switch {
     position: relative;
     display: inline-block;
@@ -132,28 +141,33 @@ border-radius: 50%;
 @media only screen and (max-width: 1370px) {
     /* For desktop: */
     .tbl,.tblsearch{
-        margin-top: 80px;
-        margin-right: 60px;
+        
+        margin-right: 5px;
     }
     
     .tbl img, .tblsearch img{
         width: 50px;
         height: 50px;
     }
-    tr.rw {
-        padding: 20 0px;
+
+    #depimg{
+        height: 25px;
+        width: 20px;
     }
     th, td{
         font-size: 15px;
     }
     td {
-        padding: 30px 70px;
+        padding: 30px 60px;
     }
     td i{
         font-size: 15px
     }
     .tblsearch td{
-        padding: 20px 50px;
+        padding: 20px 70px;
+    }
+    td.btn{
+        padding: 50px 35px;
     }
     .search  {
         width: 220px;
@@ -192,19 +206,26 @@ border-radius: 50%;
     
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1370px){
+@media only screen and (min-width: 1200px) and (max-width: 1500px){
     td {
-        padding: 30px 120px;
+        padding: 30px 80px;
     }
     td i{
         font-size: 17px
     }
     .tblsearch td{
-        padding: 50px 70px;
+        padding: 50px 110px;
+    }
+    td.btn{
+        padding: 50px 50px;
     }
     .tbl img, .tblsearch img{
         width: 60px;
         height: 60px;
+    }
+    #depimg{
+        height: 30px;
+        width: 25px;
     }
     .search  {
         width: 290px;
