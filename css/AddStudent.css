@@ -81,3 +81,6 @@ input:checked+.slider:before {
   line-height: 15px;
   margin: 5px 0 0;
 }
+.btn{
+  cursor: pointer;
+ }

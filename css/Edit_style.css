@@ -167,3 +167,6 @@ input:checked+.slider:before {
 #changes-con {
     margin-top: -10%;
 }
+.btn{
+ cursor: pointer;
+}
