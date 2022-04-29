@@ -277,4 +277,13 @@ border-radius: 50%;
         padding: 50px 60px;
     }
 }
+@media only screen and (min-width: 1750px) and (max-width: 1850px){
+    td {
+        padding: 50px 110px;
+    }
+    .tblsearch td{
+        padding: 50px 130px;
+    }
+    
+}
 
