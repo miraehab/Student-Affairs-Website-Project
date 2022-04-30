@@ -17,47 +17,46 @@ function calcAge(){
 
 function validateForm() {
     var name = document.getElementById("NAME").value;
-    var id = document.getElementById("IDs").value;
+    var Sid = document.getElementById("IDs").value;
     var gpa = document.getElementById("GPA").value;
     var email = document.getElementById("EMAIL").value;
-    var level = document.getElementById("LEVEL").value;
-    var department = document.getElementById("DEPARTMENT").value;
-    //const date = document.getElementById("date-button").value;
-    var gender = document.getElementById("GENDER").value;
     var phone = document.getElementById("PHONE").value;
-    var form = document.getElementById("form").value;
+
+    var select1 = document.getElementById("LEVEL");
+    var level = select1.options[select1.selectedIndex].value;
+
+    var select2 = document.getElementById("DEPARTMENT");
+    var department = select2.options[select2.selectedIndex].value;
+
 
     var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
     if(!regName.test(name)){
         document.getElementById("Pname").innerHTML = "Please enter your full name (firstname & lastname)";
-        }
+    }
+
+    if ( !isNaN(Sid)) {
+        document.getElementById("Pid").innerHTML = "ID must be all numbers";
+    }
 
     if(gpa < '0' || gpa > '4'){
         document.getElementById("Pgpa").innerHTML = "Invalid gpa (please enter gpa from 0 to 4)";
     }
+
     var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (!(regEmail.test(email))){
+    if(!(regEmail.test(email))){
         document.getElementById("Pemail").innerHTML = "You have entered an invalid email address!";
     }
    
-  /*  if((level == "1" || level== "2" && department != "General"))
-    {
+   if( level == 0 || level== 1 && department != 0) {
         document.getElementById("Pdepart").innerHTML = "Check your level and department, if you are in level 1 or 2 choose department 'General'";
-    }*/
-    document.getElementById(level);
-console.log(level);
-console.log(department);
-console.log(gender);
-
+    }
     
     let age = calcAge();
     if(age < 16){
         document.getElementById("Pbirth").innerHTML = "Age must be more than 16";
     }
-    
-
    
-   if(phone.length < 11){
+   if(phone.length < 16){
         document.getElementById("Pphone").innerHTML = "Invalid phone number";
     }
   
