@@ -11,9 +11,10 @@
                 <a><img src="./images/logo.png"
                 width="170" height="140"></a>
                     <br>
-                    <input class="input-name" type="text" name="username" placeholder="Enter username" required>
+                    <input class="input-name" type="text" id="username" placeholder="Enter username" required>
                         <label for="password"></label>
-                        <input class="input-pass" type="password" name="password" placeholder="Enter password" required>
+                        <input class="input-pass" type="password" id="password" placeholder="Enter password" required>
+                        <p class="error" id="name&pass"></p>
                         <br>
                         <label ><input class="inputs" type="checkbox" checked="checked" name="remember"> Remember me</label>
                         <br>
@@ -21,7 +22,8 @@
                         <a id="link" href="#">Forgot your password? </a>
                         <br>
                         <br>
-                        <input  type="submit" value="login" id="login">
+                        <!--<input type="submit" value="login" id="login">--> 
+                        <button  onclick="window.location.href='./HomePage.html';"  class="submit"id="login">login</button>
             </div>
         </form>
     </body>
