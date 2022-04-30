@@ -65,6 +65,12 @@ function validateForm() {
     }else{
         document.getElementById("Pdepart").innerHTML = "";
     }
+    if( (level == 2 || level== 3) && department == 0) {
+        document.getElementById("Pdepart").innerHTML = "Check your level and department, if you are in level 3 or 4 you have to choose a specific department";
+        event.preventDefault();
+    }else{
+        document.getElementById("Pdepart").innerHTML = "";
+    }
     
     let age = calcAge();
     if(age < 16){
