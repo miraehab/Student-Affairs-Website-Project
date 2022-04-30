@@ -1,3 +1,4 @@
+// edit page variables are constant now so validation is not warking until we handle backend
 function calcAge(){
     var date = document.getElementById("date-button").value;
     var dt = new Date(date);   
