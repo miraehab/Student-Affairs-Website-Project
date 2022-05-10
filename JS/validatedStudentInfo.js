@@ -42,7 +42,7 @@ function validateForm() {
 
     if(gpa == null || gpa == ""){
 
-    }else if(gpa < '0' || gpa > '4'){
+    }else if(gpa < 0 || gpa > 4){
         document.getElementById("Pgpa").innerHTML = "Invalid gpa (please enter gpa from 0 to 4)";
         event.preventDefault();
     }else{
@@ -62,10 +62,7 @@ function validateForm() {
    if( (level == 0 || level== 1) && department != 0) {
         document.getElementById("Pdepart").innerHTML = "Check your level and department, if you are in level 1 or 2 choose department 'General'";
         event.preventDefault();
-    }else{
-        document.getElementById("Pdepart").innerHTML = "";
-    }
-    if( (level == 2 || level== 3) && department == 0) {
+    }else if( (level == 2 || level== 3) && department == 0) {
         document.getElementById("Pdepart").innerHTML = "Check your level and department, if you are in level 3 or 4 you have to choose a specific department";
         event.preventDefault();
     }else{
