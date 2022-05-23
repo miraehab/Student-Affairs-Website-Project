@@ -4,19 +4,8 @@
     <head>
         <link rel="stylesheet" href="{% static 'css/NavBar.css'%}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% if navbar == 'home' %}
-            <title>Home page</title>
-            <link rel="stylesheet" href="{% static 'css/homePage.css'%}">
-        {% elif navbar == 'view-all' %}
-            <title>View All Student</title>
-            <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
-            <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
-        {% elif navbar == 'search' %}
-            <title>Search Student</title>
-            <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
-            <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
-        {% endif %}
-        
+        {% block head %}
+        {% endblock %}
     </head>
     <body>
         <div class="nav">
@@ -49,6 +38,7 @@
         </div>
         {% block content %}
         {% endblock %}
+
         {% block js %}
         {% endblock %}
         <script src="{% static 'JS/nav.js'%}"></script>

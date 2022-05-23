@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+  <title>Search Student</title>
+  <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+{% endblock %}
+
 {% block content %}
   <div class="search">
     <input type="text" placeholder="Student name" class="input-field" id="isearch" onkeyup="loadSearchStudents()">

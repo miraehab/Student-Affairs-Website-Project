@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load static %} {% csrf_token %}
 
+{% block head %}
+  <title>View All Student</title>
+  <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+{% endblock %}
+
 {% block content %}
 
   <div class="tbl">
@@ -23,10 +29,10 @@
 {% endblock %}
 {% block js %}
 <script src="{% static 'js/getAllStudents.js'%}"></script>
-            <script>
-            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
-                window.location.reload();
-            }
-            loadStudents();
-            </script>
+<script>
+  if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+    window.location.reload();
+  }
+  loadStudents();
+</script>
 {% endblock %}
