@@ -1,12 +1,12 @@
-{% load static %}
+{% load static %} {% csrf_token %}
 <!DOCTYPE>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>View All Student</title>
-  <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}"/>
-  <link rel="stylesheet" href="{% static 'css/NavBar.css'%}"/>
+  <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
+  <link rel="stylesheet" href="{% static 'css/NavBar.css'%}" />
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,10 +17,10 @@
         <div class="nav-left">
             <a href="/HomePage" class="nav-menu">Home <img src="{% static 'images/home.png'%}" class="nav-menue-logo"/></a>
             <a href="/Add_Student" class="nav-menu">Add Student <img src="{% static 'images/add.png'%}" class="nav-menue-logo"/></a>
-            <a href="/Edit_student_data" class="nav-menu">Edit Student info <img src="{% static 'images/edit.png'%}" class="nav-menue-logo"/></a>
+            <a href="/Search" class="nav-menu">Search <img src="{% static 'images/search.png'%}" class="nav-menue-logo"/></a>
         </div>
         <div class="nav-right">
-            <a href="/Search" class="nav-menu">Search <img src="{% static 'images/search.png'%}" class="nav-menue-logo"/></a>
+            
             <a href="/View-all" class="active-menu-right">View All Students <img src="{% static 'images/all.png'%}" class="nav-menue-logo"/></a>
             <a href="/loginPage" class="nav-menu">Log in <img src="{% static 'images/login.png'%}" class="nav-menue-logo"/></a>
         </div>
@@ -35,7 +35,6 @@
     <ul id="menu-list">
         <a href="/HomePage"><li class="menu-element">Home <img src="{% static 'images/home.png'%}" class="nav-menue-logo"/></li></a>
         <a href="/Add_Student"><li class="menu-element">Add Student <img src="{% static 'images/add.png'%}" class="nav-menue-logo"/></li></a>
-        <a href="/Edit_student_data"><li class="menu-element">Edit Student info <img src="{% static 'images/edit.png'%}" class="nav-menue-logo"/></li></a>
         <a href="/Search"><li class="menu-element">Search <img src="{% static 'images/search.png'%}" class="nav-menue-logo"/></li></a>
         <a href="/View-all"><li class="menu-element-active">View All Students <img src="{% static 'images/all.png'%}" class="nav-menue-logo"/></li></a>
         <a href="/loginPage"><li class="menu-element">Log in <img src="{% static 'images/login.png'%}" class="nav-menue-logo"/></li></a>
@@ -44,7 +43,7 @@
 
   <div class="tbl">
     <table>
-      <thead>
+      <thead id="tableHead">
         <tr class="head">
           <th></th>
           <th>Name:</th>
@@ -54,28 +53,17 @@
           <th>Assign department</th>
         </tr>
       </thead>
-      <tbody>
-        {% for student in Students %}
-          <tr class="rw">
-            <td class="img"><img src={{student.image}} alt=""></td>
-            <td class="name">{{student.name}}</td>
-            <td class="id">{{student.id}}</td>
-            <td class="swtch"><label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label></td>
-            <td class="btn"><button onclick="window.location.href='/Edit_student_data';"><i class="fas fa-pen" ></i></button></td>
-            <td class="btn"><a href="/assign" ><img src="{% static 'images/department.png'%}" id="depimg"/></a></td>
-          </tr>
-        {% endfor %}
-      </tbody>
+      <tbody id="tableData"></tbody>
 
 
     </table>
   </div>
-
-
   <script src="{% static 'JS/nav.js'%}"></script>
+  <script src="{% static 'JS/getAllStudents.js'%}"></script>
+  <script>
+    if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+      window.location.reload();
+    }
+    loadStudents();
+  </script>
 </body>
-
-<>
