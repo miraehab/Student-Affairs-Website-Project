@@ -49,7 +49,7 @@ def search(request):
 @login_required
 def view_all(request):
     students = Student.objects.all()
-    return render(request, "View-all.html", {"Students": students})
+    return render(request, "View-all.html", {"Students": students, 'navbar': 'view-all'})
 
 
 @login_required

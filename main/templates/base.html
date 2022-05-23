@@ -1,11 +1,17 @@
-{% load static %}
+{% load static %} {% csrf_token %}
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'css/NavBar.css'%}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if navbar == 'home' %}
         <title>Home page</title>
-            <link rel="stylesheet" href="{% static 'css/homePage.css'%}">
+        <link rel="stylesheet" href="{% static 'css/homePage.css'%}">
+        {% elif navbar == 'view-all' %}
+        <title>View All Student</title>
+        <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
+        <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+        {% endif %}
         
     </head>
     <body>
@@ -18,7 +24,7 @@
                 </div>
                 <div class="nav-right">
                     
-                    <a href="/View-all" class="nav-menu">View All Students <img src="{% static 'images/all.png'%}" class="nav-menue-logo"/></a>
+                    <a href="/View-all" class="{% if navbar == 'view-all' %} active-menu-right {% else %} nav-menu {% endif %}">View All Students <img src="{% static 'images/all.png'%}" class="nav-menue-logo"/></a>
                     <a href="/loginPage" class="nav-menu">Log in <img src="{% static 'images/login.png'%}" class="nav-menue-logo"/></a>
                 </div>
             </nav>
@@ -43,6 +49,14 @@
         {% if navbar == 'home' %}
         <script src="{% static 'JS/getHomepage.js'%}"></script>
         <script>getData()</script>
+        {% elif navbar == 'view-all' %}
+        <script src="{% static 'JS/getAllStudents.js'%}"></script>
+        <script>
+          if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+            window.location.reload();
+          }
+          loadStudents();
+        </script>
         {% endif %}
     </body>
 </html>
