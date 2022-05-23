@@ -49,25 +49,8 @@
         </div>
         {% block content %}
         {% endblock %}
+        {% block js %}
+        {% endblock %}
         <script src="{% static 'JS/nav.js'%}"></script>
-        {% if navbar == 'home' %}
-            <script src="{% static 'JS/getHomepage.js'%}"></script>
-            <script>getData()</script>
-        {% elif navbar == 'view-all' %}
-            <script src="{% static 'JS/getAllStudents.js'%}"></script>
-            <script>
-            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
-                window.location.reload();
-            }
-            loadStudents();
-            </script>
-        {% elif navbar == 'search' %}
-            <script src="{% static 'JS/searchStudent.js'%}"></script>
-            <script>
-            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
-                window.location.reload();
-            }
-            </script>
-        {% endif %}
     </body>
 </html>
