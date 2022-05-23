@@ -43,7 +43,7 @@ def home(request):
 
 @login_required
 def search(request):
-    return render(request, "Search.html")
+    return render(request, "Search.html", {'navbar': 'search'})
 
 
 @login_required

@@ -5,12 +5,16 @@
         <link rel="stylesheet" href="{% static 'css/NavBar.css'%}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if navbar == 'home' %}
-        <title>Home page</title>
-        <link rel="stylesheet" href="{% static 'css/homePage.css'%}">
+            <title>Home page</title>
+            <link rel="stylesheet" href="{% static 'css/homePage.css'%}">
         {% elif navbar == 'view-all' %}
-        <title>View All Student</title>
-        <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
-        <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+            <title>View All Student</title>
+            <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
+            <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+        {% elif navbar == 'search' %}
+            <title>Search Student</title>
+            <link rel="stylesheet" href="{% static 'css/search&viewStudents.css'%}" />
+            <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
         {% endif %}
         
     </head>
@@ -47,16 +51,23 @@
         {% endblock %}
         <script src="{% static 'JS/nav.js'%}"></script>
         {% if navbar == 'home' %}
-        <script src="{% static 'JS/getHomepage.js'%}"></script>
-        <script>getData()</script>
+            <script src="{% static 'JS/getHomepage.js'%}"></script>
+            <script>getData()</script>
         {% elif navbar == 'view-all' %}
-        <script src="{% static 'JS/getAllStudents.js'%}"></script>
-        <script>
-          if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
-            window.location.reload();
-          }
-          loadStudents();
-        </script>
+            <script src="{% static 'JS/getAllStudents.js'%}"></script>
+            <script>
+            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+                window.location.reload();
+            }
+            loadStudents();
+            </script>
+        {% elif navbar == 'search' %}
+            <script src="{% static 'JS/searchStudent.js'%}"></script>
+            <script>
+            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+                window.location.reload();
+            }
+            </script>
         {% endif %}
     </body>
 </html>
