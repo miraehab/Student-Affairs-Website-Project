@@ -34,4 +34,48 @@ We started to implement the backend of the website using <b>Django</b>: </br>
 <img src="https://user-images.githubusercontent.com/74511706/170028257-6503d96f-b2ff-44df-a7d8-cb1f91330a7a.png"  width="600" height="400" />
 <img src="https://user-images.githubusercontent.com/74511706/170029132-421696f8-9f8b-431b-8ba9-65977c574664.png"  width="600" height="400" />
 <img src="https://user-images.githubusercontent.com/74511706/170029410-84e62885-15e6-48e0-bce2-80951b4d4e86.png"  width="600" height="400" />
- </div>
+</div>
+
+Setting up the environment 🛠
+--------------------------
+
+#### 1. Make sure python v3.7 or higher is installed:
+
+console
+* To get the version Excute:
+
+```
+$ python --version
+Python 3.9.6
+```
+
+#### 2. Make Sure Git is installed:
+* To get the version Excute:
+```
+$ git --version
+git version 2.28.0.windows.1
+```
+
+#### 3. Execute the following commands in your terminal after changing your directory to the desired path
+
+```
+$ mkdir project && cd project
+$ python -m venv venv
+```
+
+For Windows Users:
+```
+$ venv\Scripts\activate
+```
+For Linux Users:
+```
+$ source venv/bin/activate
+```
+Then
+```
+$ git clone https://github.com/miraehab/Student-Affairs-Website-Project.git && cd Student-Affairs-Website-Project
+$ pip install -r requirements.txt
+```
+<b>To test our web site here is a user name and password:</b></br>
+username: mira</br>
+password: mira1234
