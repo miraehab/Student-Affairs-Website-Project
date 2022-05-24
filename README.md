@@ -19,15 +19,15 @@ the student’s department assignment page.(applicable for students if level >= 
 
 <h2>Project Steps: </h2>
 <h3>First:</h3>
-We made the UI/UX design of the website using Adobe XD.</br>
+We made the UI/UX design of the website using <b>Adobe XD</b>.</br>
 Here is the link of the design --> <a href="https://github.com/miraehab/Student-Affairs-Website-Project/blob/main/website-desgin.xd">XD file</a></br>
 <h3>Second: (Front-end phase)</h3>
 We started to implement the design using <b>html, css and javascript</b>, and made the website responsive for all screen sizes.</br>
 <h3>Third: (Back-end phase)</h3>
-We started to implement the backend of the website using Django: 
-- built the database.
-- implemented the add, edit, search and assign departement functions
-- implemented the login/logout functions to made the website more secure.
+We started to implement the backend of the website using <b>Django</b>: </br>
+- built the database.</br>
+- implemented the add, edit, search and assign departement functions</br>
+- implemented the login/logout functions to made the website more secure.</br>
 
 <h2>Some screenshots of the website:</h2>
 <div>
