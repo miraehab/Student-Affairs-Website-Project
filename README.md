@@ -1,4 +1,4 @@
-# Student-Affairs-Website-Project
+# Student Affairs Website Project
 
 That is our Project for the Web technologie course taken during fall 2022 semester.
 
