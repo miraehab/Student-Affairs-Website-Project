@@ -4,6 +4,14 @@
   margin-bottom: 6%;
 }
 
+#Student-img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
 .text-input, .select-button, .date-button {
   font-size: 15px;
   border: 1px solid;
