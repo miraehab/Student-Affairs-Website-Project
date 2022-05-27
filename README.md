@@ -1,6 +1,6 @@
 # Student Affairs Website Project
 
-That is our Project for the Web technology course taken during fall 2022 semester.
+This is our Project for the Web technology course taken during fall 2022 semester.
 
 <h2> Website Description</h2>
 <h3>This website is for the stuff of the student affairs, each user can :</h3>
