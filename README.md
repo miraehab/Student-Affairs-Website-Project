@@ -31,9 +31,9 @@ We started to implement the backend of the website using <b>Django</b>: </br>
 
 <h2>Some screenshots of the website:</h2>
 <div>
-<img src="https://user-images.githubusercontent.com/74511706/170028257-6503d96f-b2ff-44df-a7d8-cb1f91330a7a.png"  width="600" height="400" />
-<img src="https://user-images.githubusercontent.com/74511706/170029132-421696f8-9f8b-431b-8ba9-65977c574664.png"  width="600" height="400" />
-<img src="https://user-images.githubusercontent.com/74511706/170029410-84e62885-15e6-48e0-bce2-80951b4d4e86.png"  width="600" height="400" />
+<img src="https://user-images.githubusercontent.com/74511706/170028257-6503d96f-b2ff-44df-a7d8-cb1f91330a7a.png"/>
+<img src="https://user-images.githubusercontent.com/74511706/170029132-421696f8-9f8b-431b-8ba9-65977c574664.png"/>
+<img src="https://user-images.githubusercontent.com/74511706/170029410-84e62885-15e6-48e0-bce2-80951b4d4e86.png"/>
 </div>
 
 Setting up the environment 🛠
